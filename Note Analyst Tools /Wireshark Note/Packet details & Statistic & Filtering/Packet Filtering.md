@@ -226,3 +226,95 @@ Analyse --> Display Filter Expression
 ```
 
 ![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/73399c4d-5a86-46ad-994f-1cb8dac1cd9e)
+
+
+## Advanced Filtering
+
+
+**Filter: "contains"**
+
+| Filter | contains |
+| --- | --- |
+| Type | Comparison Operator (toán tử so sánh) |
+| Description | Tìm giá trị trong packet. Phân biệt chữ hoa với thường, chức năng tương tự như “Find” → tập trung vào 1 field cụ thể |
+| Example | Find all "Apache" servers. |
+| Workflow | Liệt kê tất cả các HTTP packet “server” chứa “Apache” |
+| Usage | http.server contains "Apache" |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/d954b216-2513-48dd-a355-3b509303b1dd)
+
+# Filter: "matches"
+
+| Filter | matches |
+| --- | --- |
+| Type | Comparison Operator (toán tử so sánh) |
+| Description | Tìm các pattern (mẫu) của biểu thức chính quy. Ko phân biệt hoa thường, hay các truy vấn phức tạp có 1 số lỗi  |
+| Example | Find all .php and .html pages. |
+| Workflow | List all HTTP packets where packets' "host" fields match keywords ".php" or ".html". |
+| Usage | http.host matches "\.(php|html)" |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/1ccd2b35-bbca-4422-b24c-ee8ee12ce76b)
+
+# Filter: "in"
+
+| Filter | in |
+| --- | --- |
+| Type | Set Membership |
+| Description | Tìm kiếm giá trị hay field trong một phạm vi cụ thể |
+| Example | Find all packets that use ports 80, 443 or 8080. |
+| Workflow | List all TCP packets where packets' "port" fields have values 80, 443 or 8080. |
+| Usage | tcp.port in {80 443 8080} |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/95583177-5484-4381-85f9-6b33d41eff9e)
+
+# Filter: "upper"
+
+| Filter | upper |
+| --- | --- |
+| Type | Function |
+| Description | String value → Chữ hoa |
+| Example | Find all "APACHE" servers. |
+| Workflow | Convert all HTTP packets' "server" fields to uppercase and list packets that contain the "APACHE" keyword. |
+| Usage | upper(http.server) contains "APACHE" |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/83ec0836-1755-4753-8e03-1aa39c4629d5)
+
+# Filter: "lower"
+
+| Filter | lower |
+| --- | --- |
+| Type | Function |
+| Description | String value → Chữ thường |
+| Example | Find all "apache" servers. |
+| Workflow | Convert all HTTP packets' "server" fields info to lowercase and list packets that contain the "apache" keyword. |
+| Usage | lower(http.server) contains "apache" |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/4e527267-0e67-441c-b77a-e274037842a0)
+
+# Filter: "string"
+
+| Filter | string |
+| --- | --- |
+| Type | Function |
+| Description | Chuyển đổi giá trị không phải chuỗi thành chuỗi |
+| Example | Tìm tất cả các frame  (khung) có số lẻ
+ |
+| Workflow | Convert all "frame number" fields to string values, and list frames end with odd values. |
+| Usage | string(frame.number) matches "[13579]$" |
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/d2d18c76-1655-4be9-9520-69dba5893ea0)
+
+# Bookmarks and Filtering Buttons
+
+Creating and using bookmarks.
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/676a5652-86b2-4c03-a25f-183eaada1e9a)
+
+Creating and using display filter buttons.
+
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/587bee9d-a608-4c62-8d81-a1e89f6d57b8)
+
+# Profiles
+
+ư **"Edit --> Configuration Profiles"** menu or the **"lower right bottom of the status bar --> Profile"**
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/9369fe85-45a7-4458-962c-73e05d54c544)
