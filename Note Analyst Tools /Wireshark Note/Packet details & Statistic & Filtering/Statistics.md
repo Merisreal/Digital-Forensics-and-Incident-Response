@@ -75,3 +75,39 @@ IP Geolocation mapping
 Endpoints and GeoIP view.
 
 ![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/3f7447ec-78bf-43ee-a9fe-76d41b29cc11)
+
+
+# IPv4 and IPv6
+
+```c
+"Statistics --> IPvX Statistics"
+```
+![1](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/3b59c313-7c4d-47bc-9018-d60b73ae3fc1)
+
+
+**DNS**
+
+- rcode
+- opcode
+- class
+- query type
+- service
+- querty stats
+
+```c
+Statistics --> DNS
+```
+![2](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/fe057e29-0c24-42e8-9eae-f832320f1374)
+
+
+**HTTP**
+
+```c
+Statistics --> HTTP
+```
+
+- Request
+- reponse code
+- original request
+![3](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/1b1275fc-4f7c-4fb8-bbbb-f0d8482fe119)
+
