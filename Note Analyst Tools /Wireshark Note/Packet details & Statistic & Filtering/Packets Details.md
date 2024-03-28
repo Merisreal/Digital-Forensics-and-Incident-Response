@@ -6,13 +6,15 @@ Owner: Mer
 
 Wireshark, tính toán và gán số thứ tự độc nhất cho một packet
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/d52507e87088deb1597042d50900eef0.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/d52507e87088deb1597042d50900eef0.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/a49ccd67-83e9-4e44-9916-47c6d753252d)
+
 
 ## Go to Packet
 
 Sử dụng “GO” menu để xem các gói cụ thể
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/cdb1e1d12c63fc831c7d94db634bbe0d.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/cdb1e1d12c63fc831c7d94db634bbe0d.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/db8cdb8b-533d-44ae-b1ef-9f5255fded61)
+
 
 ## Find Packet
 
@@ -41,7 +43,8 @@ Có 3 trường
 
 Cần biết thông tin có sẵn trong khung nào để dễ tìm kiếm. Ví dụ cần tìm kiếm Packet detais trong Packet list, wireshark ko tìm được
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/c8811df8ea0fa2b70fa90831d1ec9278.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/c8811df8ea0fa2b70fa90831d1ec9278.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/ef91b4c6-30b2-4f26-ad0d-670c8672e718)
+
 
 # Mark Packets
 
@@ -49,25 +52,29 @@ Cần biết thông tin có sẵn trong khung nào để dễ tìm kiếm. Ví d
 
 LƯU Ý: các gói đưuọc đánh dấu sẽ làm mới mỗi phiên, cho nên sẽ mất sau khi đóng capture file
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/2c290f2f3c7b07223c86cd066751d19b.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/2c290f2f3c7b07223c86cd066751d19b.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/5395754d-5b55-4632-bca9-cb12a4767d78)
+
 
 # Packet Comments
 
 Giống với Marking, nhưng ko bị mất khi đóng tệp trừ khi xóa
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/844bedc49bdd7dcaf26861a9cd2658fd.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/844bedc49bdd7dcaf26861a9cd2658fd.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/f022d2b3-d1ee-47ad-8429-f342539ada6c)
+
 
 # Export Packets
 
 Capture file có thể chứa hàng nghìn gói trong một tệp. Wireshark ko phải IDS, cho nên đôi khi cần tách gói cụ thể ra khỏi tệp và tìm hiểu sâu hơn, sẽ giúp các nahf phân tích chia sẻ các gói tin supicious duy nhất. Do đó, thông tin dư thừa không được đưa vào quá trình phân tích
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/86daa70b6cb8b93cb11535787222fb26.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/86daa70b6cb8b93cb11535787222fb26.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/a6f7084b-481e-4c4b-b671-dff06661485b)
+
 
 # Export Objects (Files)
 
 Wireshark có thể trích xuất các tập tin được truyền qua dây. Đối với một nhà phân tích bảo mật, điều quan trọng là khám phá các tệp được chia sẻ và lưu chúng để điều tra thêm. Đối tượng xuất chỉ khả dụng cho các luồng của giao thức đã chọn (DICOM, HTTP, IMF, SMB và TFTP).
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/16c22447c36bff2e415ea75a764854c8.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/16c22447c36bff2e415ea75a764854c8.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/136c6601-5147-408d-b37e-8e98653f0e0e)
+
 
 # Time Display Format
 
@@ -77,9 +84,10 @@ Hiển thị thời gian bằng giây kể từ lúc bắt đầu Capture
 View --> Time Display Format
 ```
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/53bb9769af677eede39a3ec9e1b368a3.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/53bb9769af677eede39a3ec9e1b368a3.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/13559cf4-e0a9-4a94-a49d-b0233ca9f211)
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/d2333318ff4df99df252c6ee1c236619.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/d2333318ff4df99df252c6ee1c236619.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/70b0fc03-8787-457e-a404-e6b74315f519)
+
 
 # Expert Info
 
@@ -105,4 +113,4 @@ Analyse --> Expert Information
 
 nó sẽ hiện ra hộp thoại
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/31917b6f1e846d3383218cabf1c07caf.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/31917b6f1e846d3383218cabf1c07caf.png)
+![image](https://github.com/Merisreal/Digital-Forensics-and-Incident-Response/assets/139641711/0bd43950-0a46-46e4-8e2d-da4dccb49872)
